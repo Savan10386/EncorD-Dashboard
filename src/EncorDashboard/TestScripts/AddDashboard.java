@@ -44,6 +44,8 @@ public class AddDashboard
 	public void AddDashboard(String Column1,String Column2,String Column3,String Column4,String Column5,String Column6,String Column7) throws Exception {
 		try
 		{
+			
+			//savan add dashboard
 			     System.out.println(Column1 +","+ Column2);
 			
 		     	 CreateDashboard cd = new CreateDashboard();
