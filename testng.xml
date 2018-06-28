@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="src">
+<listeners>
+    <listener class-name="com.stta.Logging.CustomReporter" />
+  </listeners>
+  <test name="EncorDashboard.TestScripts" preserve-order="true">
+    <classes>
+    <class name="EncorDashboard.TestScripts.AddDashboard">
+          <method>setUp</method>
+          <method>AddDashboard</method>
+          <method>tearDown</method>
+      </class> 
+      <class name="EncorDashboard.TestScripts.ChangeDashboard">
+          <method>setUp</method>
+          <method>SelectDashboard</method>
+          <method>tearDown</method>
+          </class>  
+       <class name="EncorDashboard.TestScripts.SaveCurrentView">
+         <method>setUp</method>
+          <method>SaveView</method>
+          <method>tearDown</method>
+       </class>    
+        <class name="EncorDashboard.TestScripts.SetResetDashboard">
+              <method>setUp</method>
+          <method>SetResetDashboard</method>
+          <method>tearDown</method> 
+       </class> 
+        <class name="EncorDashboard.TestScripts.UserAdministration">
+            <method>setUp</method>
+          <method>UserAdministration</method>
+          <method>tearDown</method> 
+       </class>
+        <class name="EncorDashboard.TestScripts.UserAccess">
+          <method>setUp</method>
+          <method>UserAccess</method>
+          <method>tearDown</method>
+      </class> 
+       <class name="EncorDashboard.TestScripts.ExportFile">
+          <method>setUp</method>
+          <method>ExportDashboard</method>
+          <method>tearDown</method>
+      </class>   
+       </classes> 
+   </test> <!-- Test --> 
+</suite> <!-- Suite -->
