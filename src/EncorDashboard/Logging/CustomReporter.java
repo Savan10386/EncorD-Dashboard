@@ -1,4 +1,4 @@
-package com.stta.Logging;
+package EncorDashboard.Logging;
 
 import java.io.File;
 import java.util.Calendar;

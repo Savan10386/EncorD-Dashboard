@@ -4,13 +4,13 @@
     <listener class-name="com.stta.Logging.CustomReporter" />
   </listeners>
   <test name="EncorDashboard.TestScripts" preserve-order="true">
-    <classes>
+   <!--  <classes>
     <class name="EncorDashboard.TestScripts.AddDashboard">
           <method>setUp</method>
           <method>AddDashboard</method>
           <method>tearDown</method>
       </class> 
-  <!--      <class name="EncorDashboard.TestScripts.ChangeDashboard">
+       <class name="EncorDashboard.TestScripts.ChangeDashboard">
           <method>setUp</method>
           <method>SelectDashboard</method>
           <method>tearDown</method>
@@ -39,7 +39,7 @@
           <method>setUp</method>
           <method>ExportDashboard</method>
           <method>tearDown</method>
-      </class>  --> 
-       </classes> 
+      </class>  
+       </classes> --> 
    </test> <!-- Test --> 
 </suite> <!-- Suite -->
