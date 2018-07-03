@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-src">
-              <span class="suite-name border-passed">src</span>
+              <span class="suite-name border-failed">src</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-src" class="hide-methods failed suite-src"> (hide)</a> <!-- hide-methods failed suite-src -->
+                      <a href="#" panel-name="suite-src" class="show-methods failed suite-src"> (show)</a> <!-- show-methods failed suite-src -->
+                    </span>
+                    <div class="method-list-content failed suite-src">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.ChangeDashboard" hash-for-method="ChangeDashboard">ChangeDashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-src -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +115,57 @@
                     <div class="method-list-content passed suite-src">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.ChangeDashboard" hash-for-method="ChangeDashboard">ChangeDashboard</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.AddDashboard" hash-for-method="AddDashboard(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)">AddDashboard(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.AddDashboard" hash-for-method="AddDashboard(Dashboard Name, Dashboard Type, View, Calender/Fiscal, Dashboard, Indicators, Flag)">AddDashboard(Dashboard Name, Dashboard Type, View, Calender/Fiscal, Dashboard, Indicators, Flag)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.AddDashboard" hash-for-method="AddDashboard(Dashboard2, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Aspirin at Arrival (AMI-1), N)">AddDashboard(Dashboard2, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Aspirin at Arrival (AMI-1), N)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.AddDashboard" hash-for-method="AddDashboard(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, N, Abdominal aortic aneurysm (AAA)...)">AddDashboard(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, N, Abdominal aortic aneurysm (AAA)...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.AddDashboard" hash-for-method="AddDashboard(Dashboard3, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)">AddDashboard(Dashboard3, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.AddDashboard" hash-for-method="AddDashboard(Dashboard4, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)">AddDashboard(Dashboard4, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.ExportFile" hash-for-method="ExportDashboard">ExportDashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.SaveCurrentView" hash-for-method="SaveView">SaveView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.SetResetDashboard" hash-for-method="SetResetDashboard">SetResetDashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.UserAccess" hash-for-method="UserAccess">UserAccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-src" title="EncorDashboard.TestScripts.UserAdministration" hash-for-method="UserAdministration">UserAdministration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-src -->
@@ -116,9 +180,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-src" class="panel src">
-          <div class="suite-src-class-passed">
+          <div class="suite-src-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">EncorDashboard.TestScripts.ChangeDashboard</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -127,6 +191,172 @@
                   <a name="ChangeDashboard">
                   </a> <!-- ChangeDashboard -->
                   <span class="method-name">ChangeDashboard</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [HAC(M) :: All Categories] but found [Electronic Dashboard(M) :: All Categories]
+	at EncorDashboard.TestScripts.ChangeDashboard.ChangeDashboard(ChangeDashboard.java:47)
+... Removed 29 stack frames<br/> java.lang.AssertionError: expected [HAC(M) :: All Categories] but found [Electronic Dashboard(M) :: All Categories]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at EncorDashboard.TestScripts.ChangeDashboard.ChangeDashboard(ChangeDashboard.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>EncorDashboard.TestScripts.ChangeDashboard.ChangeDashboard(ChangeDashboard.java:47)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-src-class-failed -->
+          <div class="suite-src-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">EncorDashboard.TestScripts.SaveCurrentView</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SaveView">
+                  </a> <!-- SaveView -->
+                  <span class="method-name">SaveView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-src-class-passed -->
+          <div class="suite-src-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">EncorDashboard.TestScripts.AddDashboard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddDashboard(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)">
+                  </a> <!-- AddDashboard(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...) -->
+                  <span class="method-name">AddDashboard</span>
+                  <span class="parameters">(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11), Y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddDashboard(Dashboard Name, Dashboard Type, View, Calender/Fiscal, Dashboard, Indicators, Flag)">
+                  </a> <!-- AddDashboard(Dashboard Name, Dashboard Type, View, Calender/Fiscal, Dashboard, Indicators, Flag) -->
+                  <span class="method-name">AddDashboard</span>
+                  <span class="parameters">(Dashboard Name, Dashboard Type, View, Calender/Fiscal, Dashboard, Indicators, Flag)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddDashboard(Dashboard2, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Aspirin at Arrival (AMI-1), N)">
+                  </a> <!-- AddDashboard(Dashboard2, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Aspirin at Arrival (AMI-1), N) -->
+                  <span class="method-name">AddDashboard</span>
+                  <span class="parameters">(Dashboard2, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Aspirin at Arrival (AMI-1), N)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddDashboard(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, N, Abdominal aortic aneurysm (AAA)...)">
+                  </a> <!-- AddDashboard(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, N, Abdominal aortic aneurysm (AAA)...) -->
+                  <span class="method-name">AddDashboard</span>
+                  <span class="parameters">(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, N, Abdominal aortic aneurysm (AAA) repair volume (IQI 4), N)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddDashboard(Dashboard3, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)">
+                  </a> <!-- AddDashboard(Dashboard3, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...) -->
+                  <span class="method-name">AddDashboard</span>
+                  <span class="parameters">(Dashboard3, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11), N)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddDashboard(Dashboard4, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)">
+                  </a> <!-- AddDashboard(Dashboard4, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...) -->
+                  <span class="method-name">AddDashboard</span>
+                  <span class="parameters">(Dashboard4, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11), N)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-src-class-passed -->
+          <div class="suite-src-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">EncorDashboard.TestScripts.ExportFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ExportDashboard">
+                  </a> <!-- ExportDashboard -->
+                  <span class="method-name">ExportDashboard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-src-class-passed -->
+          <div class="suite-src-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">EncorDashboard.TestScripts.UserAccess</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserAccess">
+                  </a> <!-- UserAccess -->
+                  <span class="method-name">UserAccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-src-class-passed -->
+          <div class="suite-src-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">EncorDashboard.TestScripts.SetResetDashboard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SetResetDashboard">
+                  </a> <!-- SetResetDashboard -->
+                  <span class="method-name">SetResetDashboard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-src-class-passed -->
+          <div class="suite-src-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">EncorDashboard.TestScripts.UserAdministration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserAdministration">
+                  </a> <!-- UserAdministration -->
+                  <span class="method-name">UserAdministration</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,7 +376,13 @@
   &lt;/listeners&gt;
   &lt;test name=&quot;EncorDashboard.TestScripts&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;EncorDashboard.TestScripts.AddDashboard&quot;/&gt;
       &lt;class name=&quot;EncorDashboard.TestScripts.ChangeDashboard&quot;/&gt;
+      &lt;class name=&quot;EncorDashboard.TestScripts.SaveCurrentView&quot;/&gt;
+      &lt;class name=&quot;EncorDashboard.TestScripts.SetResetDashboard&quot;/&gt;
+      &lt;class name=&quot;EncorDashboard.TestScripts.UserAdministration&quot;/&gt;
+      &lt;class name=&quot;EncorDashboard.TestScripts.UserAccess&quot;/&gt;
+      &lt;class name=&quot;EncorDashboard.TestScripts.ExportFile&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- EncorDashboard.TestScripts --&gt;
 &lt;/suite&gt; &lt;!-- src --&gt;
@@ -160,7 +396,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">EncorDashboard.TestScripts (1 class)</span>
+                <span class="test-name">EncorDashboard.TestScripts (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +422,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ChangeDashboard')
-data.setCell(0, 2, 'EncorDashboard.TestScripts.ChangeDashboard')
-data.setCell(0, 3, 119126);
+data.setCell(0, 1, 'SetResetDashboard')
+data.setCell(0, 2, 'EncorDashboard.TestScripts.SetResetDashboard')
+data.setCell(0, 3, 148887);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ExportDashboard')
+data.setCell(1, 2, 'EncorDashboard.TestScripts.ExportFile')
+data.setCell(1, 3, 142867);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ChangeDashboard')
+data.setCell(2, 2, 'EncorDashboard.TestScripts.ChangeDashboard')
+data.setCell(2, 3, 54399);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AddDashboard')
+data.setCell(3, 2, 'EncorDashboard.TestScripts.AddDashboard')
+data.setCell(3, 3, 49114);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'AddDashboard')
+data.setCell(4, 2, 'EncorDashboard.TestScripts.AddDashboard')
+data.setCell(4, 3, 47515);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'AddDashboard')
+data.setCell(5, 2, 'EncorDashboard.TestScripts.AddDashboard')
+data.setCell(5, 3, 45866);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'SaveView')
+data.setCell(6, 2, 'EncorDashboard.TestScripts.SaveCurrentView')
+data.setCell(6, 3, 44160);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'UserAccess')
+data.setCell(7, 2, 'EncorDashboard.TestScripts.UserAccess')
+data.setCell(7, 3, 41235);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'UserAdministration')
+data.setCell(8, 2, 'EncorDashboard.TestScripts.UserAdministration')
+data.setCell(8, 3, 39267);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'AddDashboard')
+data.setCell(9, 2, 'EncorDashboard.TestScripts.AddDashboard')
+data.setCell(9, 3, 30722);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'AddDashboard')
+data.setCell(10, 2, 'EncorDashboard.TestScripts.AddDashboard')
+data.setCell(10, 3, 30312);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'AddDashboard')
+data.setCell(11, 2, 'EncorDashboard.TestScripts.AddDashboard')
+data.setCell(11, 3, 10359);
 window.suiteTableData['src']= { tableData: data, tableDiv: 'times-div-src'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
               <div id="times-div-src">
               </div> <!-- times-div-src -->
             </div> <!-- times-div -->
@@ -221,18 +501,176 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">EncorDashboard.TestScripts.ChangeDashboard</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">EncorDashboard.TestScripts.AddDashboard</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">ChangeDashboard</span>
-                <span class="method-start">35219 ms</span>
+                <span class="method-name">AddDashboard(Dashboard Name, Dashboard Type, View, Calender/Fiscal, Dashboard, Indicators, Flag)</span>
+                <span class="method-start">36332 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">154346 ms</span>
+                <span class="method-start">67054 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">68597 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddDashboard(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)</span>
+                <span class="method-start">112021 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">161145 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">162703 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddDashboard(Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, N, Abdominal aortic aneurysm (AAA)...)</span>
+                <span class="method-start">188683 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">218996 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">220019 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddDashboard(Dashboard2, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Aspirin at Arrival (AMI-1), N)</span>
+                <span class="method-start">245702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">291568 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">292694 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddDashboard(Dashboard3, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)</span>
+                <span class="method-start">337474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">347833 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">349390 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddDashboard(Dashboard4, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) ...)</span>
+                <span class="method-start">366917 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">414442 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EncorDashboard.TestScripts.ChangeDashboard</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">415995 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ChangeDashboard</span>
+                <span class="method-start">430995 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EncorDashboard.TestScripts.SaveCurrentView</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">485394 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EncorDashboard.TestScripts.ChangeDashboard</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">485394 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EncorDashboard.TestScripts.SaveCurrentView</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SaveView</span>
+                <span class="method-start">499586 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">543746 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EncorDashboard.TestScripts.SetResetDashboard</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">544798 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SetResetDashboard</span>
+                <span class="method-start">557449 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">706337 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EncorDashboard.TestScripts.UserAdministration</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">706338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UserAdministration</span>
+                <span class="method-start">717774 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">757042 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EncorDashboard.TestScripts.UserAccess</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">758070 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UserAccess</span>
+                <span class="method-start">770092 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">811327 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EncorDashboard.TestScripts.ExportFile</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">812869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ExportDashboard</span>
+                <span class="method-start">824622 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">967489 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

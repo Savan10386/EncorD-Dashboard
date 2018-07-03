@@ -31,14 +31,119 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">EncorDashboard.TestScripts</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">154.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">EncorDashboard.TestScripts</td><td class="numi">11</td><td class="numi">11</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">969.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">EncorDashboard.TestScripts &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">EncorDashboard.TestScripts.ChangeDashboard</td><td><a href="#m1"><b>ChangeDashboard</b>  </a></td><td class="numi">1</td><td>1530623177281</td><td class="numi">54399</td></tr>
 <tr><th colspan="4">EncorDashboard.TestScripts &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">EncorDashboard.TestScripts.ChangeDashboard</td><td><a href="#m1"><b>ChangeDashboard</b>  </a></td><td class="numi">1</td><td>1530539398193</td><td class="numi">119126</td></tr>
+<tr class="passedodd"><td rowspan="6">EncorDashboard.TestScripts.AddDashboard</td><td><a href="#m2"><b>AddDashboard</b>  </a></td><td class="numi">6</td><td>1530622782618</td><td class="numi">378100</td></tr><tr class="passedodd"><td><a href="#m3"><b>AddDashboard</b>  </a></td><td class="numi">6</td><td>1530622782618</td><td class="numi">378100</td></tr><tr class="passedodd"><td><a href="#m4"><b>AddDashboard</b>  </a></td><td class="numi">6</td><td>1530622782618</td><td class="numi">378100</td></tr><tr class="passedodd"><td><a href="#m5"><b>AddDashboard</b>  </a></td><td class="numi">6</td><td>1530622782618</td><td class="numi">378100</td></tr><tr class="passedodd"><td><a href="#m6"><b>AddDashboard</b>  </a></td><td class="numi">6</td><td>1530622782618</td><td class="numi">378100</td></tr><tr class="passedodd"><td><a href="#m7"><b>AddDashboard</b>  </a></td><td class="numi">6</td><td>1530622782618</td><td class="numi">378100</td></tr>
+<tr class="passedeven"><td rowspan="1">EncorDashboard.TestScripts.ExportFile</td><td><a href="#m8"><b>ExportDashboard</b>  </a></td><td class="numi">1</td><td>1530623570908</td><td class="numi">142867</td></tr>
+<tr class="passedodd"><td rowspan="1">EncorDashboard.TestScripts.SaveCurrentView</td><td><a href="#m9"><b>SaveView</b>  </a></td><td class="numi">1</td><td>1530623245872</td><td class="numi">44160</td></tr>
+<tr class="passedeven"><td rowspan="1">EncorDashboard.TestScripts.SetResetDashboard</td><td><a href="#m10"><b>SetResetDashboard</b>  </a></td><td class="numi">1</td><td>1530623303735</td><td class="numi">148887</td></tr>
+<tr class="passedodd"><td rowspan="1">EncorDashboard.TestScripts.UserAccess</td><td><a href="#m11"><b>UserAccess</b>  </a></td><td class="numi">1</td><td>1530623516378</td><td class="numi">41235</td></tr>
+<tr class="passedeven"><td rowspan="1">EncorDashboard.TestScripts.UserAdministration</td><td><a href="#m12"><b>UserAdministration</b>  </a></td><td class="numi">1</td><td>1530623464060</td><td class="numi">39267</td></tr>
 </table>
 <h1>EncorDashboard.TestScripts</h1>
 <h2 id="m1">EncorDashboard.TestScripts.ChangeDashboard:ChangeDashboard</h2>
+<div style="padding-left:3em">
+<p>expected [HAC(M) :: All Categories] but found [Electronic Dashboard(M) :: All Categories]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at EncorDashboard.TestScripts.ChangeDashboard.ChangeDashboard(ChangeDashboard.java:47)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">EncorDashboard.TestScripts.AddDashboard:AddDashboard</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr>
+<tr class="param stripe"><td>Dashboard1</td>
+<td>Clinical Dashboard</td>
+<td>Monthly Scorecard</td>
+<td>Calendar Year</td>
+<td>Y</td>
+<td>Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11)</td>
+<td>Y</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">EncorDashboard.TestScripts.UserAccess:UserAccess</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">EncorDashboard.TestScripts.AddDashboard:AddDashboard</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr>
+<tr class="param stripe"><td>Dashboard Name</td>
+<td>Dashboard Type</td>
+<td>View</td>
+<td>Calender/Fiscal</td>
+<td>Dashboard</td>
+<td>Indicators</td>
+<td>Flag</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">EncorDashboard.TestScripts.ExportFile:ExportDashboard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">EncorDashboard.TestScripts.AddDashboard:AddDashboard</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr>
+<tr class="param stripe"><td>Dashboard2</td>
+<td>Clinical Dashboard</td>
+<td>Monthly Scorecard</td>
+<td>Calendar Year</td>
+<td>Y</td>
+<td>Aspirin at Arrival (AMI-1)</td>
+<td>N</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">EncorDashboard.TestScripts.AddDashboard:AddDashboard</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr>
+<tr class="param stripe"><td>Dashboard1</td>
+<td>Clinical Dashboard</td>
+<td>Monthly Scorecard</td>
+<td>Calendar Year</td>
+<td>N</td>
+<td>Abdominal aortic aneurysm (AAA) repair volume (IQI 4)</td>
+<td>N</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">EncorDashboard.TestScripts.SetResetDashboard:SetResetDashboard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">EncorDashboard.TestScripts.UserAdministration:UserAdministration</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">EncorDashboard.TestScripts.SaveCurrentView:SaveView</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">EncorDashboard.TestScripts.AddDashboard:AddDashboard</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr>
+<tr class="param stripe"><td>Dashboard3</td>
+<td>Clinical Dashboard</td>
+<td>Monthly Scorecard</td>
+<td>Calendar Year</td>
+<td>Y</td>
+<td>Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11)</td>
+<td>N</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">EncorDashboard.TestScripts.AddDashboard:AddDashboard</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr>
+<tr class="param stripe"><td>Dashboard4</td>
+<td>Clinical Dashboard</td>
+<td>Monthly Scorecard</td>
+<td>Calendar Year</td>
+<td>Y</td>
+<td>Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11)</td>
+<td>N</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
