@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="src">
 <listeners>
-    <listener class-name="com.stta.Logging.CustomReporter" />
+    <listener class-name="EncorDashboard.Logging.CustomReporter" />
   </listeners>
   <test name="EncorDashboard.TestScripts" preserve-order="true">
-   <!--  <classes>
-    <class name="EncorDashboard.TestScripts.AddDashboard">
+     <classes>
+    <!-- <class name="EncorDashboard.TestScripts.AddDashboard">
           <method>setUp</method>
           <method>AddDashboard</method>
           <method>tearDown</method>
-      </class> 
-       <class name="EncorDashboard.TestScripts.ChangeDashboard">
+      </class> -->
+    <class name="EncorDashboard.TestScripts.ChangeDashboard">
           <method>setUp</method>
           <method>SelectDashboard</method>
           <method>tearDown</method>
           </class>  
-       <class name="EncorDashboard.TestScripts.SaveCurrentView">
+   <!--  <class name="EncorDashboard.TestScripts.SaveCurrentView">
          <method>setUp</method>
           <method>SaveView</method>
           <method>tearDown</method>
@@ -39,7 +39,7 @@
           <method>setUp</method>
           <method>ExportDashboard</method>
           <method>tearDown</method>
-      </class>  
-       </classes> --> 
+      </class> -->
+       </classes>    
    </test> <!-- Test --> 
 </suite> <!-- Suite -->

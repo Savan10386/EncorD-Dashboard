@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [src]">
   <listeners>
-    <listener class-name="com.stta.Logging.CustomReporter"/>
+    <listener class-name="EncorDashboard.Logging.CustomReporter"/>
   </listeners>
   <test name="EncorDashboard.TestScripts(failed)">
     <classes>
       <class name="EncorDashboard.TestScripts.AddDashboard">
         <methods>
-          <include name="AddDashboard" invocation-numbers="0"/>
+          <include name="AddDashboard" invocation-numbers="3"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
