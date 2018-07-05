@@ -10,7 +10,7 @@
           <method>AddDashboard</method>
           <method>tearDown</method>
       </class> 
-  <!--  <class name="EncorDashboard.TestScripts.ChangeDashboard">
+  <class name="EncorDashboard.TestScripts.ChangeDashboard">
           <method>setUp</method>
           <method>SelectDashboard</method>
           <method>tearDown</method>
@@ -39,7 +39,7 @@
           <method>setUp</method>
           <method>ExportDashboard</method>
           <method>tearDown</method>
-      </class> -->
+      </class>
        </classes>    
    </test> <!-- Test --> 
 </suite> <!-- Suite -->
