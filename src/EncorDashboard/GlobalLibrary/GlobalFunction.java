@@ -7,7 +7,9 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import EncorDashboard.UserInterface.DashboardGearWheelMenu;
 
@@ -27,6 +29,7 @@ public class GlobalFunction {
 		File file = new File("E:/workspace/EncorDDashboard/Library/IEDriverServer.exe");
 		System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
  		GlobalVariables.oDriver =  new InternetExplorerDriver();
+ 		
 	}
 	
 	  public static void init()
