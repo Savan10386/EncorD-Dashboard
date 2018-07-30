@@ -285,7 +285,7 @@ public class DashboardGearWheelMenu {
  	}
   
   
-  public void GetDashboardRate() throws IOException
+  public void SetDashboardRate() throws IOException
   {
 	     int columnCount = 0;
 	     

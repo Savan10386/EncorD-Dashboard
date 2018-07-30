@@ -38,7 +38,46 @@ public class GenericFunction {
 	public static String DRelevantYYYYMM;
 	public static String DNumerator;
 	public static String DDenominator;
+	public static String Column1;
+	public static String Column2;
+	public static String Column3;
+	public static String Column4;
+	public static String Column5;
+	public static String Column6;
+	public static String Column7;
+	public static String Column8;
+	public static String Column9;
+	public static String Column10;
+	public static String Column11;
+	public static String Column12;
+	public static String Column13;
+	public static String Column14;
+	public static String Column15;
+	public static String Column16;
 	
+	public static void SaveVariable(String Column1,String Column2,String Column3,String Column4,String Column5,String Column6,String Column7,String Column8,String Column9,String Column10,String Column11,String Column12,String Column13,String Column14,String Column15,String Column16)
+    {
+ 	   GenericFunction.Column1 = Column1;
+ 	   GenericFunction.Column1 = Column2;
+ 	   GenericFunction.Column1 = Column3;
+ 	   GenericFunction.Column1 = Column4;
+ 	   GenericFunction.Column1 = Column5;
+ 	   GenericFunction.Column1 = Column6;
+ 	   GenericFunction.Column1 = Column7;
+ 	   GenericFunction.Column1 = Column8;
+ 	   GenericFunction.Column1 = Column9;
+ 	   GenericFunction.Column1 = Column10;
+ 	   GenericFunction.Column1 = Column11;
+ 	   GenericFunction.Column1 = Column12;
+ 	   GenericFunction.Column1 = Column13;
+ 	   GenericFunction.Column1 = Column14;
+ 	   GenericFunction.Column1 = Column15;
+ 	   GenericFunction.Column1 = Column16; 
+ 	   
+ 	   
+ 	  System.out.println(Column1+','+Column2+','+Column3+','+Column4+','+Column5+','+Column6+','+Column7+','+Column8+','+Column9+','+Column10+','+Column11+','+Column12+','+Column13+','+Column14+','+Column15+','+Column16);
+ 	  
+    }
 	public static void dbConnect()throws SQLException
 	{
 		try {
@@ -46,7 +85,7 @@ public class GenericFunction {
 			    String dbURL = "jdbc:sqlserver://MS-DB-C;DatabaseName=EncorD092017";
 	            String user = "MSSMS_User";
 	            String pass = "M3d1s0lv!";
-	            String Query = "select IndicatorContentKey,RelevantYYYYMM,Case DorN When 'N' Then Count(DorN) end as Numerator,Case DorN When 'D' Then Count(DorN)end as Denominator from AHRQ.IndicatorVisitResults where IndicatorContentKey = 501 and RelevantYYYYMM between  '201610' and '201805' GROUP BY RelevantYYYYMM,IndicatorContentKey,DorN;";
+	            String Query = "select IndicatorContentKey,RelevantYYYYMM,Case DorN When 'N' Then Count(DorN) end as Numerator,Case DorN When 'D' Then Count(DorN)end as Denominator from AHRQ.IndicatorVisitResults where IndicatorContentKey = 515 and RelevantYYYYMM between  '201610' and '201805' GROUP BY RelevantYYYYMM,IndicatorContentKey,DorN;";
 			
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			
@@ -64,7 +103,10 @@ public class GenericFunction {
                   DRelevantYYYYMM = rs.getString(2);
                   DNumerator = rs.getString(3);								        
                   DDenominator = rs.getString(4);                 
-                 System. out.println(DIndicatorContentKey+"  "+DRelevantYYYYMM+ " "+DNumerator+ " "+DDenominator);	
+                 System. out.println(DIndicatorContentKey+"  "+DRelevantYYYYMM+ " "+DNumerator+ " "+DDenominator); 
+                 
+                // if(DIndicatorContentKey==Column1 && DIndicatorContentKey==Column1 DIndicatorContentKey==Column1 && DIndicatorContentKey==Column1 DIndicatorContentKey==Column1 && DIndicatorContentKey==Column1 DIndicatorContentKey==Column1)
+                 
 	         }
 	         	         
 	         GlobalVariables.conn.close();	
@@ -223,10 +265,7 @@ public class GenericFunction {
            outputStream.close();
          }
        
-       public static void MatchData(String Column1,String Column2,String Column3,String Column4,String Column5,String Column6,String Column7,String Column8,String Column9,String Column10,String Column11,String Column12,String Column13,String Column14,String Column15,String Column16)
-       {
-    	  
-       }
+       
        
     }
 	 

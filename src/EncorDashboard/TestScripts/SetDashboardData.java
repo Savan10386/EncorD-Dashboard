@@ -11,7 +11,7 @@ import EncorDashboard.GlobalLibrary.GlobalVariables;
 import EncorDashboard.UserInterface.Administration;
 import EncorDashboard.UserInterface.DashboardGearWheelMenu;
 
-public class GetDashboardData {
+public class SetDashboardData {
 	
 	
 	
@@ -39,9 +39,9 @@ public class GetDashboardData {
 				    
 				   dgwm.ClickonChangeDashbd();
 		   	      
-		   	        dgwm.GetDashboardRate();
+		   	        dgwm.SetDashboardRate();
 		   	      
-		   	        GenericFunction.dbConnect();     
+		   	          
 		   	          	      
 		   	  			         
 			  			
