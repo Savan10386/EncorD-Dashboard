@@ -55,7 +55,7 @@ public class UserAdministration {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		
-		GlobalVariables.oDriver.quit();
+		//GlobalVariables.oDriver.quit();
     		}
 
 }
