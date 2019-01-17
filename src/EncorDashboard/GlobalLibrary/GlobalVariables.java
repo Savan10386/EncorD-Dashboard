@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class GlobalVariables {
+public  class GlobalVariables {
 	
 	public static WebDriver oDriver = null;
 	public static String LoginURL = "http://ms-qa-c/encord-sh-qa-x-02";
