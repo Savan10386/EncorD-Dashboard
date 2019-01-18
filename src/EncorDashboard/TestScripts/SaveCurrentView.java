@@ -33,7 +33,7 @@ public class SaveCurrentView {
 	public void SaveView() throws Exception {
 		try
 		{
-						
+			// new changes done			
 			DashboardGearWheelMenu dgwlm = new DashboardGearWheelMenu();
 			
 			   // dgwlm.clickonDashboardIcon();
