@@ -30,7 +30,7 @@ public class Administration {
 			
 		Thread.sleep(1000);
 		
-        GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkUserAdmin")).click();
+        GlobalVariables.oDriver.findElement(By.id("ctl00_lnkTextAdministration")).click();
 		
         Thread.sleep(1000);
 		

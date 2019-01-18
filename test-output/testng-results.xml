@@ -1,101 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="12" passed="12" failed="0" skipped="0">
+<testng-results total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-01-18T09:44:08Z" name="src" finished-at="2019-01-18T10:17:11Z" duration-ms="1983241">
+  <suite started-at="2019-01-18T12:14:45Z" name="Default suite" finished-at="2019-01-18T12:20:09Z" duration-ms="324187">
     <groups>
     </groups>
-    <test started-at="2019-01-18T09:44:08Z" name="EncorDashboard.TestScripts" finished-at="2019-01-18T10:17:11Z" duration-ms="1983241">
-      <class name="EncorDashboard.TestScripts.UserAccess">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.UserAccess@2de23121]" started-at="2019-01-18T15:26:10Z" name="setUp" finished-at="2019-01-18T15:26:18Z" duration-ms="8779" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="UserAccess()[pri:0, instance:EncorDashboard.TestScripts.UserAccess@2de23121]" started-at="2019-01-18T15:26:18Z" name="UserAccess" finished-at="2019-01-18T15:26:38Z" duration-ms="20025" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserAccess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.UserAccess@2de23121]" started-at="2019-01-18T15:26:38Z" name="tearDown" finished-at="2019-01-18T15:26:39Z" duration-ms="1034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- EncorDashboard.TestScripts.UserAccess -->
-      <class name="EncorDashboard.TestScripts.SetResetDashboard">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.SetResetDashboard@22fcf7ab]" started-at="2019-01-18T15:23:06Z" name="setUp" finished-at="2019-01-18T15:23:20Z" duration-ms="14065" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="SetResetDashboard()[pri:0, instance:EncorDashboard.TestScripts.SetResetDashboard@22fcf7ab]" started-at="2019-01-18T15:23:20Z" name="SetResetDashboard" finished-at="2019-01-18T15:25:40Z" duration-ms="139199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetResetDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.SetResetDashboard@22fcf7ab]" started-at="2019-01-18T15:25:40Z" name="tearDown" finished-at="2019-01-18T15:25:41Z" duration-ms="1082" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- EncorDashboard.TestScripts.SetResetDashboard -->
-      <class name="EncorDashboard.TestScripts.UserAdministration">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.UserAdministration@5e5d171f]" started-at="2019-01-18T15:25:41Z" name="setUp" finished-at="2019-01-18T15:25:50Z" duration-ms="8805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="UserAdministration()[pri:0, instance:EncorDashboard.TestScripts.UserAdministration@5e5d171f]" started-at="2019-01-18T15:25:50Z" name="UserAdministration" finished-at="2019-01-18T15:26:10Z" duration-ms="20125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserAdministration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.UserAdministration@5e5d171f]" started-at="2019-01-18T15:26:10Z" name="tearDown" finished-at="2019-01-18T15:26:10Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- EncorDashboard.TestScripts.UserAdministration -->
-      <class name="EncorDashboard.TestScripts.ExportFile">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.ExportFile@43c1b556]" started-at="2019-01-18T15:26:39Z" name="setUp" finished-at="2019-01-18T15:26:52Z" duration-ms="12031" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ExportDashboard()[pri:0, instance:EncorDashboard.TestScripts.ExportFile@43c1b556]" started-at="2019-01-18T15:26:52Z" name="ExportDashboard" finished-at="2019-01-18T15:47:10Z" duration-ms="1218712" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExportDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.ExportFile@43c1b556]" started-at="2019-01-18T15:47:10Z" name="tearDown" finished-at="2019-01-18T15:47:11Z" duration-ms="1049" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- EncorDashboard.TestScripts.ExportFile -->
-      <class name="EncorDashboard.TestScripts.SaveCurrentView">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.SaveCurrentView@63475ace]" started-at="2019-01-18T15:21:06Z" name="setUp" finished-at="2019-01-18T15:21:27Z" duration-ms="21421" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="SaveView()[pri:0, instance:EncorDashboard.TestScripts.SaveCurrentView@63475ace]" started-at="2019-01-18T15:21:27Z" name="SaveView" finished-at="2019-01-18T15:23:05Z" duration-ms="98159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SaveView -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.SaveCurrentView@63475ace]" started-at="2019-01-18T15:23:05Z" name="tearDown" finished-at="2019-01-18T15:23:06Z" duration-ms="1119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- EncorDashboard.TestScripts.SaveCurrentView -->
-      <class name="EncorDashboard.TestScripts.ChangeDashboard">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.ChangeDashboard@587e5365]" started-at="2019-01-18T15:19:09Z" name="setUp" finished-at="2019-01-18T15:19:28Z" duration-ms="18948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ChangeDashboard()[pri:0, instance:EncorDashboard.TestScripts.ChangeDashboard@587e5365]" started-at="2019-01-18T15:19:28Z" name="ChangeDashboard" finished-at="2019-01-18T15:21:05Z" duration-ms="96599" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.ChangeDashboard@587e5365]" started-at="2019-01-18T15:21:05Z" name="tearDown" finished-at="2019-01-18T15:21:06Z" duration-ms="1021" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- EncorDashboard.TestScripts.ChangeDashboard -->
+    <test started-at="2019-01-18T12:14:45Z" name="Default test" finished-at="2019-01-18T12:20:09Z" duration-ms="324187">
       <class name="EncorDashboard.TestScripts.AddDashboard">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:14:08Z" name="setUp" finished-at="2019-01-18T15:14:43Z" duration-ms="34303" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:44:45Z" name="setUp" finished-at="2019-01-18T17:45:04Z" duration-ms="18851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:14:43Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T15:15:13Z" duration-ms="30714" status="PASS">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:45:04Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T17:45:35Z" duration-ms="30452" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,15 +52,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:15:13Z" name="tearDown" finished-at="2019-01-18T15:15:14Z" duration-ms="1025" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:45:35Z" name="tearDown" finished-at="2019-01-18T17:45:36Z" duration-ms="1062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:15:14Z" name="setUp" finished-at="2019-01-18T15:15:46Z" duration-ms="31295" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:45:36Z" name="setUp" finished-at="2019-01-18T17:45:51Z" duration-ms="15779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:15:46Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T15:15:56Z" duration-ms="10559" status="PASS">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:45:51Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T17:46:35Z" duration-ms="43991" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -185,15 +101,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:15:56Z" name="tearDown" finished-at="2019-01-18T15:15:57Z" duration-ms="1034" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:46:35Z" name="tearDown" finished-at="2019-01-18T17:46:37Z" duration-ms="1031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:15:57Z" name="setUp" finished-at="2019-01-18T15:16:31Z" duration-ms="33352" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:46:37Z" name="setUp" finished-at="2019-01-18T17:46:53Z" duration-ms="16286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:16:31Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T15:17:01Z" duration-ms="30592" status="PASS">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:46:53Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T17:47:23Z" duration-ms="30429" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,15 +150,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:17:01Z" name="tearDown" finished-at="2019-01-18T15:17:02Z" duration-ms="1026" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:47:23Z" name="tearDown" finished-at="2019-01-18T17:47:24Z" duration-ms="1080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:17:02Z" name="setUp" finished-at="2019-01-18T15:17:34Z" duration-ms="32020" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:47:24Z" name="setUp" finished-at="2019-01-18T17:47:38Z" duration-ms="13508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:17:34Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T15:17:45Z" duration-ms="10490" status="PASS">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:47:38Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T17:48:16Z" duration-ms="38109" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -283,15 +199,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:17:45Z" name="tearDown" finished-at="2019-01-18T15:17:46Z" duration-ms="1023" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:48:16Z" name="tearDown" finished-at="2019-01-18T17:48:17Z" duration-ms="1063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:17:46Z" name="setUp" finished-at="2019-01-18T15:18:17Z" duration-ms="30858" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:48:17Z" name="setUp" finished-at="2019-01-18T17:48:30Z" duration-ms="13123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:18:17Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T15:18:27Z" duration-ms="10493" status="PASS">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:48:30Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T17:49:09Z" duration-ms="39307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -332,15 +248,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:18:27Z" name="tearDown" finished-at="2019-01-18T15:18:28Z" duration-ms="1021" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:49:09Z" name="tearDown" finished-at="2019-01-18T17:49:11Z" duration-ms="1089" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:18:28Z" name="setUp" finished-at="2019-01-18T15:18:58Z" duration-ms="29592" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:49:11Z" name="setUp" finished-at="2019-01-18T17:49:30Z" duration-ms="19348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:18:58Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T15:19:08Z" duration-ms="10418" status="PASS">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:49:30Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T17:50:08Z" duration-ms="38449" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -381,11 +297,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T15:19:08Z" name="tearDown" finished-at="2019-01-18T15:19:09Z" duration-ms="1020" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4c178a76]" started-at="2019-01-18T17:50:08Z" name="tearDown" finished-at="2019-01-18T17:50:09Z" duration-ms="1023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- EncorDashboard.TestScripts.AddDashboard -->
-    </test> <!-- EncorDashboard.TestScripts -->
-  </suite> <!-- src -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

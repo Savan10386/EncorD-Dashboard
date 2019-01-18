@@ -66,7 +66,7 @@ public class GlobalFunction {
 		
 		GlobalVariables.oDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
-		GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.id("ctl00_lnkAdministration"));
+		GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.id("ctl00_AdministrativeModule"));
 							
 		GlobalVariables.oElement.click();
 		
