@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 public  class GlobalVariables {
 	
 	public static WebDriver oDriver = null;
-	public static String LoginURL = "http://ms-qa-c/encord-sh-qa-x-02";
+	public static String LoginURL = "http://msv-qa-web/encord-sh-qa-x-02";
 	public static WebElement oElement = null; 
 	public static int IncrementByone = 0;
 	public static Hashtable<String,String> testData=new Hashtable<String,String>();
