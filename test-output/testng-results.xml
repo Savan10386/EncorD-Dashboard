@@ -1,25 +1,790 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results total="12" passed="0" failed="0" skipped="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="421516" started-at="2018-07-30T16:44:38Z" finished-at="2018-07-30T16:51:39Z">
+  <suite started-at="2019-01-18T09:19:42Z" name="src" finished-at="2019-01-18T09:19:51Z" duration-ms="8712">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="421516" started-at="2018-07-30T16:44:38Z" finished-at="2018-07-30T16:51:39Z">
-      <class name="EncorDashboard.TestScripts.UserAdministration">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.UserAdministration@51081592]" name="setUp" is-config="true" duration-ms="31871" started-at="2018-07-30T22:14:38Z" finished-at="2018-07-30T22:15:10Z">
+    <test started-at="2019-01-18T09:19:42Z" name="EncorDashboard.TestScripts" finished-at="2019-01-18T09:19:51Z" duration-ms="8712">
+      <class name="EncorDashboard.TestScripts.UserAccess">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.UserAccess@2de23121]" started-at="2019-01-18T14:49:49Z" name="setUp" finished-at="2019-01-18T14:49:49Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.UserAccess.setUp(UserAccess.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UserAdministration()[pri:0, instance:EncorDashboard.TestScripts.UserAdministration@51081592]" name="UserAdministration" duration-ms="389624" started-at="2018-07-30T22:15:10Z" finished-at="2018-07-30T22:21:39Z">
+        <test-method signature="UserAccess()[pri:0, instance:EncorDashboard.TestScripts.UserAccess@2de23121]" started-at="2019-01-18T14:49:50Z" name="UserAccess" finished-at="2019-01-18T14:49:50Z" duration-ms="2" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserAccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.UserAccess@2de23121]" started-at="2019-01-18T14:49:50Z" name="tearDown" finished-at="2019-01-18T14:49:50Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- EncorDashboard.TestScripts.UserAccess -->
+      <class name="EncorDashboard.TestScripts.UserAdministration">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.UserAdministration@5e5d171f]" started-at="2019-01-18T14:49:48Z" name="setUp" finished-at="2019-01-18T14:49:48Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.06 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.06 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.UserAdministration.setUp(UserAdministration.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="UserAdministration()[pri:0, instance:EncorDashboard.TestScripts.UserAdministration@5e5d171f]" started-at="2019-01-18T14:49:49Z" name="UserAdministration" finished-at="2019-01-18T14:49:49Z" duration-ms="2" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserAdministration -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.UserAdministration@51081592]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-30T22:21:39Z" finished-at="2018-07-30T22:21:39Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.UserAdministration@5e5d171f]" started-at="2019-01-18T14:49:49Z" name="tearDown" finished-at="2019-01-18T14:49:49Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- EncorDashboard.TestScripts.UserAdministration -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="EncorDashboard.TestScripts.SetResetDashboard">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.SetResetDashboard@22fcf7ab]" started-at="2019-01-18T14:49:47Z" name="setUp" finished-at="2019-01-18T14:49:47Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.SetResetDashboard.setUp(SetResetDashboard.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SetResetDashboard()[pri:0, instance:EncorDashboard.TestScripts.SetResetDashboard@22fcf7ab]" started-at="2019-01-18T14:49:48Z" name="SetResetDashboard" finished-at="2019-01-18T14:49:48Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetResetDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.SetResetDashboard@22fcf7ab]" started-at="2019-01-18T14:49:48Z" name="tearDown" finished-at="2019-01-18T14:49:48Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- EncorDashboard.TestScripts.SetResetDashboard -->
+      <class name="EncorDashboard.TestScripts.ExportFile">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.ExportFile@43c1b556]" started-at="2019-01-18T14:49:50Z" name="setUp" finished-at="2019-01-18T14:49:50Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.03 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.03 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.ExportFile.setUp(ExportFile.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ExportDashboard()[pri:0, instance:EncorDashboard.TestScripts.ExportFile@43c1b556]" started-at="2019-01-18T14:49:51Z" name="ExportDashboard" finished-at="2019-01-18T14:49:51Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExportDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.ExportFile@43c1b556]" started-at="2019-01-18T14:49:51Z" name="tearDown" finished-at="2019-01-18T14:49:51Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- EncorDashboard.TestScripts.ExportFile -->
+      <class name="EncorDashboard.TestScripts.SaveCurrentView">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.SaveCurrentView@63475ace]" started-at="2019-01-18T14:49:45Z" name="setUp" finished-at="2019-01-18T14:49:45Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.02 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.02 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.SaveCurrentView.setUp(SaveCurrentView.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SaveView()[pri:0, instance:EncorDashboard.TestScripts.SaveCurrentView@63475ace]" started-at="2019-01-18T14:49:47Z" name="SaveView" finished-at="2019-01-18T14:49:47Z" duration-ms="5" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SaveView -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.SaveCurrentView@63475ace]" started-at="2019-01-18T14:49:47Z" name="tearDown" finished-at="2019-01-18T14:49:47Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- EncorDashboard.TestScripts.SaveCurrentView -->
+      <class name="EncorDashboard.TestScripts.ChangeDashboard">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.ChangeDashboard@587e5365]" started-at="2019-01-18T14:49:44Z" name="setUp" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.ChangeDashboard.setUp(ChangeDashboard.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ChangeDashboard()[pri:0, instance:EncorDashboard.TestScripts.ChangeDashboard@587e5365]" started-at="2019-01-18T14:49:45Z" name="ChangeDashboard" finished-at="2019-01-18T14:49:45Z" duration-ms="2" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangeDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.ChangeDashboard@587e5365]" started-at="2019-01-18T14:49:45Z" name="tearDown" finished-at="2019-01-18T14:49:45Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- EncorDashboard.TestScripts.ChangeDashboard -->
+      <class name="EncorDashboard.TestScripts.AddDashboard">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:42Z" name="setUp" finished-at="2019-01-18T14:49:42Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.36 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.36 seconds
+Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.5.156', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.AddDashboard.setUp(AddDashboard.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T14:49:44Z" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dashboard Name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dashboard Type]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[View]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Calender/Fiscal]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Indicators]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Flag]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="tearDown" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="setUp" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T14:49:44Z" duration-ms="6" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dashboard1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clinical Dashboard]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Monthly Scorecard]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Calendar Year]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="tearDown" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="setUp" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T14:49:44Z" duration-ms="2" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dashboard1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clinical Dashboard]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Monthly Scorecard]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Calendar Year]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Abdominal aortic aneurysm (AAA) repair volume (IQI 4)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="tearDown" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="setUp" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T14:49:44Z" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dashboard2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clinical Dashboard]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Monthly Scorecard]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Calendar Year]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Aspirin at Arrival (AMI-1)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="tearDown" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="setUp" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T14:49:44Z" duration-ms="10" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dashboard3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clinical Dashboard]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Monthly Scorecard]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Calendar Year]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="tearDown" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="setUp" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-01-18T14:49:44Z" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dashboard4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clinical Dashboard]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Monthly Scorecard]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Calendar Year]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@4988d8b8]" started-at="2019-01-18T14:49:44Z" name="tearDown" finished-at="2019-01-18T14:49:44Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- EncorDashboard.TestScripts.AddDashboard -->
+    </test> <!-- EncorDashboard.TestScripts -->
+  </suite> <!-- src -->
 </testng-results>

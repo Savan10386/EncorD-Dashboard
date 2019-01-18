@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>EncorDashboard.TestScripts</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/12</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 05 20:12:26 IST 2018</td>
+<td>Started on:</td><td>Fri Jan 18 14:49:42 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>859 seconds (859378 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8712 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,571 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.36 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.AddDashboard.setUp(AddDashboard.java:32)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1059300256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1059300256'><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.36 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.AddDashboard.setUp(AddDashboard.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.ChangeDashboard.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.ChangeDashboard</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.ChangeDashboard.setUp(ChangeDashboard.java:26)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace164714495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace164714495'><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.ChangeDashboard.setUp(ChangeDashboard.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.ChangeDashboard@587e5365</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.SaveCurrentView.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.SaveCurrentView</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.02 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.SaveCurrentView.setUp(SaveCurrentView.java:24)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1627883152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1627883152'><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.02 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.SaveCurrentView.setUp(SaveCurrentView.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.SaveCurrentView@63475ace</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.SetResetDashboard.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.SetResetDashboard</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.SetResetDashboard.setUp(SetResetDashboard.java:24)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace796553753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace796553753'><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.SetResetDashboard.setUp(SetResetDashboard.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.SetResetDashboard@22fcf7ab</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.UserAdministration.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.UserAdministration</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.06 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.UserAdministration.setUp(UserAdministration.java:25)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2019157894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2019157894'><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.06 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.UserAdministration.setUp(UserAdministration.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.UserAdministration@5e5d171f</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.UserAccess.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.UserAccess</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.UserAccess.setUp(UserAccess.java:18)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace363397863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace363397863'><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.05 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.UserAccess.setUp(UserAccess.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.UserAccess@2de23121</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.ExportFile.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.ExportFile</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.03 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.ExportFile.setUp(ExportFile.java:24)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1928621590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1928621590'><pre>org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.03 seconds
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cb&apos;, time: &apos;2013-10-18 17:15:02&apos;
+System info: host: &apos;DESKTOP-6I31IJP&apos;, ip: &apos;10.10.5.156&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.2&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:201)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:224)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:214)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:180)
+	at EncorDashboard.GlobalLibrary.GlobalFunction.BrowsersSettings(GlobalFunction.java:31)
+	at EncorDashboard.TestScripts.ExportFile.setUp(ExportFile.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.ExportFile@43c1b556</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.setUp()'><b>setUp</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.AddDashboard.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.AddDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.ChangeDashboard.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.ChangeDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.ChangeDashboard@587e5365</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.SaveCurrentView.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.SaveCurrentView</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.SaveCurrentView@63475ace</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.SetResetDashboard.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.SetResetDashboard</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.SetResetDashboard@22fcf7ab</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.UserAdministration.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.UserAdministration</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.UserAdministration@5e5d171f</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.UserAccess.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.UserAccess</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.UserAccess@2de23121</td></tr>
+<tr>
+<td title='EncorDashboard.TestScripts.ExportFile.tearDown()'><b>tearDown</b><br>Test class: EncorDashboard.TestScripts.ExportFile</td>
+<td></td>
+<td>0</td>
+<td>EncorDashboard.TestScripts.ExportFile@43c1b556</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -77,63 +640,63 @@ function toggleAllBoxes() {
 <tr>
 <td title='EncorDashboard.TestScripts.AddDashboard.AddDashboard()'><b>AddDashboard</b><br>Test class: EncorDashboard.TestScripts.AddDashboard<br>Parameters: Dashboard Name, Dashboard Type, View, Calender/Fiscal, Dashboard, Indicators, Flag</td>
 <td></td>
-<td>30</td>
-<td>EncorDashboard.TestScripts.AddDashboard@68be2bc2</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.AddDashboard.AddDashboard()'><b>AddDashboard</b><br>Test class: EncorDashboard.TestScripts.AddDashboard<br>Parameters: Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11), Y</td>
 <td></td>
-<td>42</td>
-<td>EncorDashboard.TestScripts.AddDashboard@68be2bc2</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.AddDashboard.AddDashboard()'><b>AddDashboard</b><br>Test class: EncorDashboard.TestScripts.AddDashboard<br>Parameters: Dashboard1, Clinical Dashboard, Monthly Scorecard, Calendar Year, N, Abdominal aortic aneurysm (AAA) repair volume (IQI 4), N</td>
 <td></td>
-<td>30</td>
-<td>EncorDashboard.TestScripts.AddDashboard@68be2bc2</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.AddDashboard.AddDashboard()'><b>AddDashboard</b><br>Test class: EncorDashboard.TestScripts.AddDashboard<br>Parameters: Dashboard2, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Aspirin at Arrival (AMI-1), N</td>
 <td></td>
-<td>47</td>
-<td>EncorDashboard.TestScripts.AddDashboard@68be2bc2</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.AddDashboard.AddDashboard()'><b>AddDashboard</b><br>Test class: EncorDashboard.TestScripts.AddDashboard<br>Parameters: Dashboard3, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11), N</td>
 <td></td>
-<td>42</td>
-<td>EncorDashboard.TestScripts.AddDashboard@68be2bc2</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.AddDashboard.AddDashboard()'><b>AddDashboard</b><br>Test class: EncorDashboard.TestScripts.AddDashboard<br>Parameters: Dashboard4, Clinical Dashboard, Monthly Scorecard, Calendar Year, Y, Abdominal Aortic Aneurysm(AAA) Repair Mortality Rate (IQI 11), N</td>
 <td></td>
-<td>44</td>
-<td>EncorDashboard.TestScripts.AddDashboard@68be2bc2</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.AddDashboard@4988d8b8</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.ChangeDashboard.ChangeDashboard()'><b>ChangeDashboard</b><br>Test class: EncorDashboard.TestScripts.ChangeDashboard</td>
 <td></td>
-<td>50</td>
-<td>EncorDashboard.TestScripts.ChangeDashboard@28feb3fa</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.ChangeDashboard@587e5365</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.ExportFile.ExportDashboard()'><b>ExportDashboard</b><br>Test class: EncorDashboard.TestScripts.ExportFile</td>
 <td></td>
-<td>75</td>
-<td>EncorDashboard.TestScripts.ExportFile@675d3402</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.ExportFile@43c1b556</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.SaveCurrentView.SaveView()'><b>SaveView</b><br>Test class: EncorDashboard.TestScripts.SaveCurrentView</td>
 <td></td>
-<td>91</td>
-<td>EncorDashboard.TestScripts.SaveCurrentView@9629756</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.SaveCurrentView@63475ace</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.SetResetDashboard.SetResetDashboard()'><b>SetResetDashboard</b><br>Test class: EncorDashboard.TestScripts.SetResetDashboard</td>
 <td></td>
-<td>77</td>
-<td>EncorDashboard.TestScripts.SetResetDashboard@482f8f11</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.SetResetDashboard@22fcf7ab</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.UserAccess.UserAccess()'><b>UserAccess</b><br>Test class: EncorDashboard.TestScripts.UserAccess</td>
 <td></td>
-<td>39</td>
-<td>EncorDashboard.TestScripts.UserAccess@51565ec2</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.UserAccess@2de23121</td></tr>
 <tr>
 <td title='EncorDashboard.TestScripts.UserAdministration.UserAdministration()'><b>UserAdministration</b><br>Test class: EncorDashboard.TestScripts.UserAdministration</td>
 <td></td>
-<td>39</td>
-<td>EncorDashboard.TestScripts.UserAdministration@1593948d</td></tr>
+<td>0</td>
+<td>EncorDashboard.TestScripts.UserAdministration@5e5d171f</td></tr>
 </table><p>
 </body>
 </html>
