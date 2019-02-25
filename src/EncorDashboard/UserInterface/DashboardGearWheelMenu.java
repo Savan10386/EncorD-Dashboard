@@ -81,7 +81,7 @@ public class DashboardGearWheelMenu {
 			try
 			{
 			
-				acns.moveToElement(GlobalVariables.oDriver.findElement(By.id("show-dashboard-popup"))).click().build().perform();
+				acns.moveToElement(GlobalVariables.oDriver.findElement(By.xpath("//a[@id='show-dashboard-popup']"))).click().build().perform();
 				
 				Thread.sleep(20000);
 				

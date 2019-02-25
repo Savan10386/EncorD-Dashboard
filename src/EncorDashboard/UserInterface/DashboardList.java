@@ -2,8 +2,10 @@ package EncorDashboard.UserInterface;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
 import EncorDashboard.GlobalLibrary.GlobalFunction;
 import EncorDashboard.GlobalLibrary.GlobalVariables;
@@ -11,14 +13,21 @@ import EncorDashboard.GlobalLibrary.GlobalVariables;
 
 
 public class DashboardList {
+	
+	@FindBy(xpath="//*[@id='ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkDashboardMgmt']/label") WebElement Managedashboard;
+	
+	
+	public DashboardList() {
+		
+		PageFactory.initElements(GlobalVariables.oDriver,this);
+	}
+	
+	
 
 	public void clickonAddDashboard() {
 		// TODO Auto-generated method stub
 		
-		//By administrationclick=By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkDashboardMgmt");
-		
-		
-		 
+						 
 		
 		try
 		{	
@@ -26,8 +35,8 @@ public class DashboardList {
 		    GlobalFunction.ClickOnAdministration();
 		    			
 			GlobalVariables.oDriver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-			
-			GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkDashboardMgmt")).click();		
+					           
+			Managedashboard.click();		
 		
 			GlobalVariables.oDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
@@ -12,6 +13,9 @@ import EncorDashboard.GlobalLibrary.GlobalVariables;
 import net.sf.saxon.expr.instruct.GlobalVariable;
 
 public class Administration {
+	
+	
+	@FindBy(id="ctl00_lnkTextAdministration") WebElement UserAdministration;
 	
 	
 	public void clickonAdministrationIcon()
@@ -30,7 +34,7 @@ public class Administration {
 			
 		Thread.sleep(1000);
 		
-        GlobalVariables.oDriver.findElement(By.id("ctl00_lnkTextAdministration")).click();
+		UserAdministration.click();
 		
         Thread.sleep(1000);
 		

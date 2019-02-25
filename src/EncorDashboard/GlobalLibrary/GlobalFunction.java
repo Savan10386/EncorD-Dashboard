@@ -26,9 +26,9 @@ public class GlobalFunction {
 	
 	public static void BrowsersSettings()
 	{
-		File file = new File("E:/workspace/EncorDDashboard/Library/IEDriverServer.exe");
-		System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
- 		GlobalVariables.oDriver =  new InternetExplorerDriver();
+		File file = new File("E:/workspace/EncorDDashboard/Library/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+ 		GlobalVariables.oDriver =  new ChromeDriver();
  		
 	}
 	
@@ -66,10 +66,11 @@ public class GlobalFunction {
 		
 		GlobalVariables.oDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
-		GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.id("ctl00_AdministrativeModule"));
-							
-		GlobalVariables.oElement.click();
+		GlobalVariables.oDriver.findElement(By.xpath("//a[@id='ctl00_lnkTextAdministration']")).click();
 		
+		GlobalVariables.oDriver.findElement(By.xpath("//a[@id='ctl00_lnkTextAdministration']")).click();
+							
+				
 		Thread.sleep(2000);
 		
     	GlobalFunction.Add_Log.info("Clicked on Administration tab");
