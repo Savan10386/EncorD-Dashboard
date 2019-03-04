@@ -29,7 +29,7 @@ public class CreateDashboard {
 		
 	//@FindBy(name="ctl00$ctl00$IndigoLiteMasterContent$AdminBody$NewDashboardRoundPanel$newDashboardView") WebElement DashboardView;
 	
-	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_NewDashboardRoundPanel_addIndicatorsGridView_header8_SelectAllCheckBox_S_D") WebElement SelectIndicator;
+	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_NewDashboardRoundPanel_addIndicatorsGridView_header8_SelectAllCheckBox") WebElement SelectIndicator;
 	
 	
 	
@@ -111,13 +111,8 @@ public class CreateDashboard {
 		 
 		 GlobalVariables.oDriver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 		 
-		   GlobalVariables.oElement =GlobalVariables.oDriver.findElement(By.xpath("//tr[@id='ctl00_ctl00_IndigoLiteMasterContent_AdminBody_NewDashboardRoundPanel_addIndicatorsGridView_DXDataRow0']/td[1]"));
-		   
-		    WebElement em  = GlobalVariables.oElement.findElement(By.tagName("td"));
-		    
-		     String IndicatorName =  em.getText();
-		     
-		     		 
+		 String IndicatorName =   GlobalVariables.oDriver.findElement(By.xpath("//tr[@id='ctl00_ctl00_IndigoLiteMasterContent_AdminBody_NewDashboardRoundPanel_addIndicatorsGridView_DXDataRow0']/td[1]")).getText();		    
+		   		       
 		 if(column6.contentEquals(IndicatorName));
 		    
 		 {
@@ -144,7 +139,7 @@ public class CreateDashboard {
                                                
            if(flag.contentEquals("N"))
          {	
-	    	SaveButton.click();
+	    	 SaveButton.click();
 	    		    	
 	         EncorDashboard.GlobalLibrary.GlobalFunction.Add_Log.info("Dashboard is saved");
 		 		

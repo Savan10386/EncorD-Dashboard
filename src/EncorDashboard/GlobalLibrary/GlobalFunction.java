@@ -75,10 +75,10 @@ public class GlobalFunction {
 		
 		GlobalVariables.oDriver.findElement(By.xpath("//a[@id='ctl00_lnkTextAdministration']")).click();
 		
-		GlobalVariables.oDriver.findElement(By.xpath("//a[@id='ctl00_lnkTextAdministration']")).click();
+	//	GlobalVariables.oDriver.findElement(By.xpath("//a[@id='ctl00_lnkTextAdministration']")).click();
 							
 				
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
     	GlobalFunction.Add_Log.info("Clicked on Administration tab");
 		}

@@ -14,7 +14,8 @@ import EncorDashboard.GlobalLibrary.GlobalVariables;
 
 public class DashboardList {
 	
-	@FindBy(xpath="//*[@id='ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkDashboardMgmt']/label") WebElement Managedashboard;
+	
+	@FindBy(xpath="//a[@id='ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkDashboardMgmt']") WebElement Managedashboard;
 	
 	
 	public DashboardList() {
@@ -35,7 +36,8 @@ public class DashboardList {
 		    GlobalFunction.ClickOnAdministration();
 		    			
 			GlobalVariables.oDriver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-					           
+				
+										           
 			Managedashboard.click();		
 		
 			GlobalVariables.oDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
