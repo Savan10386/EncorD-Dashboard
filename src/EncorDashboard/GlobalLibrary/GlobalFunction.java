@@ -10,7 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+import EncorDashboard.Logging.WebEventListener;
 import EncorDashboard.UserInterface.DashboardGearWheelMenu;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
@@ -29,6 +31,11 @@ public class GlobalFunction {
 		File file = new File("E:/workspace/EncorDDashboard/Library/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
  		GlobalVariables.oDriver =  new ChromeDriver();
+ 		GlobalVariables.e_driver = new EventFiringWebDriver(GlobalVariables.oDriver);
+		// Now create object of EventListerHandler to register it with EventFiringWebDriver
+		GlobalVariables.eventListener = new WebEventListener();
+		GlobalVariables.e_driver.register(GlobalVariables.eventListener);
+        GlobalVariables.oDriver = GlobalVariables.e_driver;
  		
 	}
 	
