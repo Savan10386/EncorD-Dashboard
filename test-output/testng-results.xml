@@ -2,16 +2,16 @@
 <testng-results total="6" passed="2" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-02-25T15:48:57Z" name="Default suite" finished-at="2019-02-25T15:51:07Z" duration-ms="130489">
+  <suite started-at="2019-03-04T12:02:43Z" name="Default suite" finished-at="2019-03-04T12:05:08Z" duration-ms="144767">
     <groups>
     </groups>
-    <test started-at="2019-02-25T15:48:57Z" name="Default test" finished-at="2019-02-25T15:51:07Z" duration-ms="130489">
+    <test started-at="2019-03-04T12:02:43Z" name="Default test" finished-at="2019-03-04T12:05:08Z" duration-ms="144767">
       <class name="EncorDashboard.TestScripts.AddDashboard">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:18:57Z" name="setUp" finished-at="2019-02-25T21:19:37Z" duration-ms="40144" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:32:43Z" name="setUp" finished-at="2019-03-04T17:33:30Z" duration-ms="47146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:19:37Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-02-25T21:20:08Z" duration-ms="30498" status="PASS">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:33:30Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-03-04T17:34:00Z" duration-ms="30400" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,15 +52,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:20:08Z" name="tearDown" finished-at="2019-02-25T21:20:09Z" duration-ms="1169" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:34:00Z" name="tearDown" finished-at="2019-03-04T17:34:02Z" duration-ms="1173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:20:09Z" name="setUp" finished-at="2019-02-25T21:20:53Z" duration-ms="43659" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:34:02Z" name="setUp" finished-at="2019-03-04T17:34:53Z" duration-ms="51278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:20:53Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-02-25T21:21:03Z" duration-ms="10420" status="PASS">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:34:53Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-03-04T17:35:03Z" duration-ms="10419" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,37 +101,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:03Z" name="tearDown" finished-at="2019-02-25T21:21:04Z" duration-ms="1204" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:03Z" name="tearDown" finished-at="2019-03-04T17:35:05Z" duration-ms="1222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:04Z" name="setUp" finished-at="2019-02-25T21:21:04Z" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:05Z" name="setUp" finished-at="2019-03-04T17:35:05Z" duration-ms="0" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: cannot determine loading status
 from unknown error: cannot determine loading status
 from disconnected: received Inspector.detached event
-  (Session info: chrome=72.0.3626.109)
+  (Session info: chrome=72.0.3626.119)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 346 milliseconds
+Command duration or timeout: 73 milliseconds
 Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
-System info: host: 'DESKTOP-6I31IJP', ip: '10.10.6.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.6.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52267}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\savan\AppData\Local\Temp\scoped_dir2208_20579}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.109, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8f78ae84c64a8696083904f57d9df570]]>
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58111}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\savan\AppData\Local\Temp\scoped_dir10120_20964}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a607f0bf2fc1b336dca54504428b048e]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
 from unknown error: cannot determine loading status
 from disconnected: received Inspector.detached event
-  (Session info: chrome=72.0.3626.109)
+  (Session info: chrome=72.0.3626.119)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 346 milliseconds
+Command duration or timeout: 73 milliseconds
 Build info: version: '2.37.0', revision: 'a7c61cb', time: '2013-10-18 17:15:02'
-System info: host: 'DESKTOP-6I31IJP', ip: '10.10.6.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
+System info: host: 'DESKTOP-6I31IJP', ip: '10.10.6.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52267}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\savan\AppData\Local\Temp\scoped_dir2208_20579}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.109, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8f78ae84c64a8696083904f57d9df570
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58111}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\savan\AppData\Local\Temp\scoped_dir10120_20964}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a607f0bf2fc1b336dca54504428b048e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -140,6 +140,13 @@ Session ID: 8f78ae84c64a8696083904f57d9df570
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy12.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:155)
 	at EncorDashboard.TestScripts.AddDashboard.setUp(AddDashboard.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -173,7 +180,7 @@ Session ID: 8f78ae84c64a8696083904f57d9df570
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-02-25T21:21:07Z" duration-ms="5" status="SKIP">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:07Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-03-04T17:35:07Z" duration-ms="4" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -214,15 +221,15 @@ Session ID: 8f78ae84c64a8696083904f57d9df570
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="tearDown" finished-at="2019-02-25T21:21:07Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:07Z" name="tearDown" finished-at="2019-03-04T17:35:07Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="setUp" finished-at="2019-02-25T21:21:07Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:07Z" name="setUp" finished-at="2019-03-04T17:35:07Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-02-25T21:21:07Z" duration-ms="2" status="SKIP">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:07Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-03-04T17:35:07Z" duration-ms="4" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -263,15 +270,15 @@ Session ID: 8f78ae84c64a8696083904f57d9df570
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="tearDown" finished-at="2019-02-25T21:21:07Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:07Z" name="tearDown" finished-at="2019-03-04T17:35:07Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="setUp" finished-at="2019-02-25T21:21:07Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:07Z" name="setUp" finished-at="2019-03-04T17:35:07Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-02-25T21:21:07Z" duration-ms="3" status="SKIP">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:07Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-03-04T17:35:07Z" duration-ms="2" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -312,15 +319,15 @@ Session ID: 8f78ae84c64a8696083904f57d9df570
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="tearDown" finished-at="2019-02-25T21:21:07Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:07Z" name="tearDown" finished-at="2019-03-04T17:35:07Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="setUp" finished-at="2019-02-25T21:21:07Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:07Z" name="setUp" finished-at="2019-03-04T17:35:07Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-02-25T21:21:07Z" duration-ms="2" status="SKIP">
+        <test-method signature="AddDashboard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:07Z" name="AddDashboard" data-provider="IndicatorDashboard" finished-at="2019-03-04T17:35:07Z" duration-ms="7" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -361,7 +368,7 @@ Session ID: 8f78ae84c64a8696083904f57d9df570
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddDashboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-02-25T21:21:07Z" name="tearDown" finished-at="2019-02-25T21:21:07Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:EncorDashboard.TestScripts.AddDashboard@b2c9a9c]" started-at="2019-03-04T17:35:08Z" name="tearDown" finished-at="2019-03-04T17:35:08Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
