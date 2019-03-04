@@ -6,7 +6,6 @@
       <class name="EncorDashboard.TestScripts.AddDashboard">
         <methods>
           <include name="AddDashboard"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- EncorDashboard.TestScripts.AddDashboard -->
