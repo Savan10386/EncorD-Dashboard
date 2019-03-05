@@ -18,6 +18,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
@@ -28,6 +30,18 @@ public class DashboardGearWheelMenu {
 	
 	String mainWindowHandle;
 	Actions acns;
+	
+	@FindBy (xpath="//a[@id='show-dashboard-popup']") WebElement clickPopup;
+	
+	@FindBy (name="ctl00$IndigoLiteMasterContent$dashboardNavigation$txtSearchCriteria") WebElement EnterDashboardName;
+	
+	@FindBy (className="DashboardName") WebElement clickDashboard;
+	
+	
+	
+	public DashboardGearWheelMenu() {
+		PageFactory.initElements(GlobalVariables.oDriver,this);
+	}
 	
 	public void clickonDashboardIcon()
 	{
@@ -81,15 +95,15 @@ public class DashboardGearWheelMenu {
 			try
 			{
 			
-				acns.moveToElement(GlobalVariables.oDriver.findElement(By.xpath("//a[@id='show-dashboard-popup']"))).click().build().perform();
+				acns.moveToElement(clickPopup).click().build().perform();
 				
 				Thread.sleep(20000);
 				
-				GlobalVariables.oDriver.findElement(By.name("ctl00$IndigoLiteMasterContent$dashboardNavigation$txtSearchCriteria")).sendKeys("HAC");
+				EnterDashboardName.sendKeys("HAC");
 				      
 		        Thread.sleep(20000);
 		                
-		        GlobalVariables.oDriver.findElement(By.className("DashboardName")).click();
+		        clickDashboard.click();
 		        
 		        Thread.sleep(20000);
 		              				

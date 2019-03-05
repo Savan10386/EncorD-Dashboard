@@ -27,15 +27,9 @@ public class CreateDashboard {
 	
 	@FindBy(name="ctl00$ctl00$IndigoLiteMasterContent$AdminBody$NewDashboardRoundPanel$addIndicatorsGridView$DXFREditorcol0") WebElement IndicatorName;
 		
-	//@FindBy(name="ctl00$ctl00$IndigoLiteMasterContent$AdminBody$NewDashboardRoundPanel$newDashboardView") WebElement DashboardView;
-	
 	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_NewDashboardRoundPanel_addIndicatorsGridView_header8_SelectAllCheckBox") WebElement SelectIndicator;
-	
-	
-	
-	//@FindBy(name="ctl00$ctl00$IndigoLiteMasterContent$AdminBody$NewDashboardRoundPanel$newDashboardView") WebElement DashboardView;
-	
-	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_NewDashboardRoundPanel_newDashboardButton") WebElement SaveButton;
+			
+	@FindBy(xpath="//input[@id ='ctl00_ctl00_IndigoLiteMasterContent_AdminBody_NewDashboardRoundPanel_newDashboardButton']") WebElement SaveButton;
 	
 	public CreateDashboard() {
 		// TODO Auto-generated constructor stub
