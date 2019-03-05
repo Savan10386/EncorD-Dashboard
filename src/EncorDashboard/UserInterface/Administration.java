@@ -17,6 +17,22 @@ public class Administration {
 	
 	@FindBy(id="ctl00_lnkTextAdministration") WebElement UserAdministration;
 	
+	@FindBy(className="ui-button-text") WebElement clickUserDropDown;
+	
+	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkUserAccess") WebElement clickUserAccess;
+	
+	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_IndigoGroupDropDown_GroupDropDownCtrl") WebElement selectUserGroup;
+	
+	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_UsersNotInGroup") WebElement userNotInGroup;
+	
+	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_SubmitBtn") WebElement clickSubmit;
+	
+	@FindBy(id="AddToGroup") WebElement AddToGroupButton;
+	
+	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_UsersInGroup") WebElement userInGroup;
+	
+	
+	
 	
 	public void clickonAdministrationIcon()
 	{
@@ -55,7 +71,7 @@ public class Administration {
 		    GlobalVariables.oDriver.switchTo().frame("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_concert");
 			
 		   
-			GlobalVariables.oDriver.findElement(By.className("ui-button-text")).click();
+		    clickUserDropDown.click();
 			
 		
             GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.xpath("/html/body/ul[1]"));
@@ -83,7 +99,7 @@ public class Administration {
 				
 			Thread.sleep(1000);
 			
-	        GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkUserAccess")).click();
+	        clickUserAccess.click();
 			
 	        Thread.sleep(1000);
 			
@@ -104,7 +120,7 @@ public class Administration {
 						
 					Thread.sleep(1000);
 					
-			       GlobalVariables.sel  = new Select(GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_IndigoGroupDropDown_GroupDropDownCtrl")));
+			       GlobalVariables.sel  = new Select(selectUserGroup);
 			       
 			       GlobalFunction.SelectBySelecttag("Administrator");
 			 			      		 					
@@ -129,24 +145,24 @@ public class Administration {
 						
 					Thread.sleep(1000);
 					
-					GlobalVariables.oElement =	GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_UsersNotInGroup"));
+					GlobalVariables.oElement =	userNotInGroup;
 					
 					List<WebElement> options = GlobalVariables.oElement.findElements(By.tagName("option"));
 
 				    for (WebElement option : options) {
 				        if ("Savan Vadalia".equals(option.getText())) {
-				        	 GlobalVariables.sel  = new Select(GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_UsersNotInGroup")));			 						       
+				        	 GlobalVariables.sel  = new Select(userNotInGroup);			 						       
 						       GlobalFunction.SelectBySelecttag("Savan Vadalia");    		 					
 					            Thread.sleep(1000);
 				            break;
 				        }
 				    }
 					
-				       GlobalVariables.oDriver.findElement(By.id("AddToGroup")).click();
+				       AddToGroupButton.click();
 				       
 				       Thread.sleep(1000);
 				       
-				       GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_SubmitBtn")).click();
+				      clickSubmit.click();
 					
 					}
 					
@@ -166,21 +182,20 @@ public class Administration {
 						
 					Thread.sleep(1000);
 					
-					GlobalVariables.oElement =	GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_UsersInGroup"));
+					GlobalVariables.oElement =	userInGroup;
 					
 					List<WebElement> options = GlobalVariables.oElement.findElements(By.tagName("option"));
 
 				    for (WebElement option : options) {
 				        if ("Savan Vadalia".equals(option.getText())) {
-				        	Assert.assertEquals(GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_UsersInGroup")).getText(),"Savan Vadalia1");   		 					
+				        	Assert.assertEquals(userInGroup.getText(),"Savan Vadalia");   		 					
 					            Thread.sleep(1000);
 				            break;
 				        }
 				    }
 					
-				       GlobalVariables.oDriver.findElement(By.id("AddToGroup")).click();	
-				       
-				       GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_SubmitBtn")).click();
+				       				       
+				      clickSubmit.click();
 					
 					}
 					
