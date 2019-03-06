@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
@@ -30,6 +31,12 @@ public class Administration {
 	@FindBy(id="AddToGroup") WebElement AddToGroupButton;
 	
 	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_UsersInGroup") WebElement userInGroup;
+	
+	
+	public Administration()
+	{
+		PageFactory.initElements(GlobalVariables.oDriver, this);
+	}
 	
 	
 	

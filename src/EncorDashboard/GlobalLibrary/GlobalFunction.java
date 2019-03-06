@@ -28,7 +28,11 @@ public class GlobalFunction {
 	
 	public static void BrowsersSettings()
 	{
-		File file = new File("E:/workspace/EncorDDashboard/Library/chromedriver.exe");
+		//office
+		//File file = new File("E:/workspace/EncorDDashboard/Library/chromedriver.exe");
+		//home
+		File file = new File("C:/Users/Savan/git/EncorD-Dashboard/Library/chromedriver.exe"); 
+		
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
  		GlobalVariables.oDriver =  new ChromeDriver();
  		GlobalVariables.e_driver = new EventFiringWebDriver(GlobalVariables.oDriver);
@@ -74,10 +78,7 @@ public class GlobalFunction {
 		GlobalVariables.oDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		GlobalVariables.oDriver.findElement(By.xpath("//a[@id='ctl00_lnkTextAdministration']")).click();
-		
-	//	GlobalVariables.oDriver.findElement(By.xpath("//a[@id='ctl00_lnkTextAdministration']")).click();
-							
-				
+								
 		Thread.sleep(1000);
 		
     	GlobalFunction.Add_Log.info("Clicked on Administration tab");
@@ -97,11 +98,8 @@ try {
 			
 			Thread.sleep(2000);
 			
-			GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.id("ctl00_lnkTextDashboard"));
-			
-						
-			GlobalVariables.oElement.click();
-		
+	      GlobalVariables.oDriver.findElement(By.xpath("//a[@id='ctl00_HyperLink1']")).click();
+					
 			
 			
 		} catch (InterruptedException e) {

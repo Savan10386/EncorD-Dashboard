@@ -67,12 +67,14 @@ public class DashboardGearWheelMenu {
 		{
 			
 			 String mainWindowHandle=GlobalVariables.oDriver.getWindowHandle();
+			 
+			 GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_DivGearWheelMenu")).click();
 			
-			GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.className("menu_class"));
+			/*GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_DivGearWheelMenu"));
 				
 			 acns = new Actions(GlobalVariables.oDriver);
 					
-			acns.moveToElement(GlobalVariables.oElement).build().perform();
+			acns.moveToElement(GlobalVariables.oElement).build().perform();*/
 			
 			Thread.sleep(10000);
 			
@@ -94,6 +96,8 @@ public class DashboardGearWheelMenu {
 		{
 			try
 			{
+				
+				acns = new Actions(GlobalVariables.oDriver);
 			
 				acns.moveToElement(clickPopup).click().build().perform();
 				
