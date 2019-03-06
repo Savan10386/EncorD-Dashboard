@@ -124,9 +124,9 @@ public class DashboardGearWheelMenu {
 			try
 			{
 			
-				GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_imgExport")).click();
+				GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_lnkExport")).click();
 				      
-		        Thread.sleep(30000);
+		        Thread.sleep(20000);
 		                
 		        GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_exportPopup_imgExportToPdf")).click();
 		        
@@ -197,9 +197,9 @@ public class DashboardGearWheelMenu {
    		GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_saveView_txtViewName"))
    		.sendKeys(GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_lblDashboardName")).getText()+123);
    		
-   		GlobalVariables.oDriver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+   		GlobalVariables.oDriver.manage().timeouts().implicitlyWait(40, TimeUnit.MINUTES);
    		
-   		GlobalVariables.oDriver.findElement(By.name("ctl00$IndigoLiteMasterContent$saveView$imgCreateView")).click();
+   		GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_saveView_imgCreateView")).click();
    		
    	}
    	

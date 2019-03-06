@@ -187,10 +187,10 @@ public class GenericFunction {
 					for (int i=0; i<rowNum-1; i++){
 						
 						
-						HSSFRow row = ws.getRow(i);
+						HSSFRow row = ws.getRow(i+1);
 						
 						
-						System.out.println(row.getCell(i));
+						System.out.println(row.getCell(i+1));
 						
 						for(int j=0; j< colNum; j++){				
 							if(row==null)
