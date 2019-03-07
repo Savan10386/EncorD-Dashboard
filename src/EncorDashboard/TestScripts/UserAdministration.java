@@ -1,7 +1,6 @@
 package EncorDashboard.TestScripts;
 
 import java.io.File;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -11,7 +10,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import EncorDashboard.GlobalLibrary.GlobalFunction;
 import EncorDashboard.GlobalLibrary.GlobalVariables;
 import EncorDashboard.UserInterface.Administration;
@@ -34,7 +32,8 @@ public class UserAdministration {
 	public void UserAdministration() throws Exception {
 		try
 		{
-		
+			
+			
 		   	  Administration adm = new Administration();
 			 
 			     adm.clickonAdministrationIcon();
@@ -55,7 +54,7 @@ public class UserAdministration {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		
-		//GlobalVariables.oDriver.quit();
+		GlobalVariables.oDriver.quit();
     		}
 
 }

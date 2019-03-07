@@ -2,8 +2,11 @@ package EncorDashboard.UserInterface;
 
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -16,9 +19,9 @@ import net.sf.saxon.expr.instruct.GlobalVariable;
 public class Administration {
 	
 	
-	@FindBy(id="ctl00_lnkTextAdministration") WebElement UserAdministration;
+	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkUserAdmin") WebElement UserAdministration;
 	
-	@FindBy(className="ui-button-text") WebElement clickUserDropDown;
+	@FindBy(className="ui-button ui-widget ui-state-default ui-button-icon-only ui-corner-right ui-button-icon") WebElement clickUserDropDown;
 	
 	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkUserAccess") WebElement clickUserAccess;
 	
@@ -64,7 +67,6 @@ public class Administration {
 		}
 		
 		catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -75,13 +77,13 @@ public class Administration {
 	{
 		try
 		{
-		    GlobalVariables.oDriver.switchTo().frame("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_concert");
+		    GlobalVariables.oDriver.switchTo().frame("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_concert1");
 			
 		   
 		    clickUserDropDown.click();
 			
 		
-            GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.xpath("/html/body/ul[1]"));
+            GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.className("ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"));
 		
 		       Thread.sleep(1000);
 		
@@ -89,6 +91,7 @@ public class Administration {
 		
 	   		
 		   GlobalFunction.Selectdropdown("Savan Vadalia","li");
+		
 		}
 		
 		catch(Exception e)
@@ -149,7 +152,15 @@ public class Administration {
 				{
 					try
 					{
-						
+						//Scroll down browser then click on save button
+					    
+					    Actions action = new Actions(GlobalVariables.oDriver);
+					    
+					        Thread.sleep(1000);
+					        
+					        action.sendKeys(Keys.PAGE_DOWN).build().perform();
+					        
+					        						
 					Thread.sleep(1000);
 					
 					GlobalVariables.oElement =	userNotInGroup;
@@ -157,19 +168,22 @@ public class Administration {
 					List<WebElement> options = GlobalVariables.oElement.findElements(By.tagName("option"));
 
 				    for (WebElement option : options) {
-				        if ("Savan Vadalia".equals(option.getText())) {
+				        if ("savan vadalia".equals(option.getText())) {
 				        	 GlobalVariables.sel  = new Select(userNotInGroup);			 						       
-						       GlobalFunction.SelectBySelecttag("Savan Vadalia");    		 					
+						       GlobalFunction.SelectBySelecttag("savan vadalia");    		 					
 					            Thread.sleep(1000);
 				            break;
 				        }
 				    }
+				    
+				      Thread.sleep(1000);
 					
 				       AddToGroupButton.click();
 				       
 				       Thread.sleep(1000);
-				       
-				      clickSubmit.click();
+				      				       
+				      
+				
 					
 					}
 					
@@ -194,16 +208,24 @@ public class Administration {
 					List<WebElement> options = GlobalVariables.oElement.findElements(By.tagName("option"));
 
 				    for (WebElement option : options) {
-				        if ("Savan Vadalia".equals(option.getText())) {
-				        	Assert.assertEquals(userInGroup.getText(),"Savan Vadalia");   		 					
+				        if ("savan vadalia".equals(option.getText())) {
+				        	Assert.assertEquals(option.getText(),"savan vadalia");   		 					
 					            Thread.sleep(1000);
 				            break;
 				        }
 				    }
 					
-				       				       
-				      clickSubmit.click();
-					
+				    clickSubmit.click();
+				      
+				      
+				      //Click on Popup ok button
+				      
+				   Alert alert = GlobalVariables.oDriver.switchTo().alert();
+				   
+				      alert.accept();
+				
+				       	      
+				    				
 					}
 					
 					catch (InterruptedException e) {
