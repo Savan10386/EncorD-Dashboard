@@ -114,7 +114,10 @@ try {
 		{
 			List<WebElement> options = GlobalVariables.oElement.findElements(By.tagName(tagname));
 
-		    for (WebElement option : options) {
+		    for (WebElement option : options) 
+		    {
+		    	System.out.println(option.getText());
+		    		    	
 		        if (value.equals(option.getText())) {
 		            option.click();
 		            break;

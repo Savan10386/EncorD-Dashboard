@@ -1,7 +1,6 @@
 package EncorDashboard.UserInterface;
 
 import java.util.List;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -11,17 +10,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
 import EncorDashboard.GlobalLibrary.GlobalFunction;
 import EncorDashboard.GlobalLibrary.GlobalVariables;
-import net.sf.saxon.expr.instruct.GlobalVariable;
 
 public class Administration {
 	
 	
 	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkUserAdmin") WebElement UserAdministration;
 	
-	@FindBy(className="ui-button ui-widget ui-state-default ui-button-icon-only ui-corner-right ui-button-icon") WebElement clickUserDropDown;
+	@FindBy(xpath="//button[1]") WebElement clickUserDropDown;
 	
 	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_LnkUserAccess") WebElement clickUserAccess;
 	
@@ -83,14 +80,16 @@ public class Administration {
 		    clickUserDropDown.click();
 			
 		
-            GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.className("ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"));
+            GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.xpath("//html/body/ul[1]"));
 		
 		       Thread.sleep(1000);
 		
 		      System.out.println("Test Dropdown");
+		      
+		      GlobalVariables.sel  = new Select(GlobalVariables.oElement);
 		
-	   		
-		   GlobalFunction.Selectdropdown("Savan Vadalia","li");
+	   		GlobalFunction.SelectBySelecttag("Savan Vadalia");
+		  
 		
 		}
 		
