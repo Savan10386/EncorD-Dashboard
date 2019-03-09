@@ -8,7 +8,7 @@
     <classes>
       <class name="EncorDashboard.TestScripts.AddDashboard">
         <methods>
-          <include name="AddDashboard" invocation-numbers="1 4 5"/>
+          <include name="AddDashboard" invocation-numbers="0 1 4"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
@@ -41,6 +41,7 @@
       <class name="EncorDashboard.TestScripts.SetResetDashboard">
         <methods>
           <include name="tearDown"/>
+          <include name="SetResetDashboard"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- EncorDashboard.TestScripts.SetResetDashboard -->

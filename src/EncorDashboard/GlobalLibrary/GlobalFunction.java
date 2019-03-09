@@ -99,6 +99,8 @@ try {
 			Thread.sleep(2000);
 			
 	      GlobalVariables.oDriver.findElement(By.xpath("//a[@id='ctl00_HyperLink1']")).click();
+	      
+	      Thread.sleep(2000);
 					
 			
 			

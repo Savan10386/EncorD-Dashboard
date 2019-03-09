@@ -36,7 +36,7 @@ public class ExportFile {
 						
 			DashboardGearWheelMenu dgwlm = new DashboardGearWheelMenu();
 			
-			   //dgwlm.clickonDashboardIcon();
+			   dgwlm.clickonDashboardIcon();
 				    
 			    dgwlm.HoveronGearWheel(); 
 			    
@@ -44,7 +44,7 @@ public class ExportFile {
 			    
 			 //   dgwlm.VerifyExportedFile();
 			    
-			    Assert.assertEquals(GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_lblDashboardName")).getText(),"New Readmission(M) :: All Categories"); 
+			    Assert.assertEquals(GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_lblDashboardName")).getText(),"HAC(M) :: All Categories"); 
 			    
 			  			
 		}

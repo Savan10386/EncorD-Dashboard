@@ -149,6 +149,8 @@ public class CreateDashboard {
    		     Thread.sleep(2000);
 	    	
    		        SaveButton.click();
+   		        
+   		     Thread.sleep(6000);
 	    		    	
 	         EncorDashboard.GlobalLibrary.GlobalFunction.Add_Log.info("Dashboard is saved");
 		 		
