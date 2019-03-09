@@ -41,8 +41,16 @@ public class UserAdministration {
 			     adm.clickUserAdministration();
 			     
 			     adm.SelectUserdropdown();
+			     
+			     adm.clickSaveAccess();
+			     
+			     System.out.println(GlobalVariables.oDriver.findElement(By.cssSelector("span#ui-dialog-title-accessUpdatedDialog")).getText());
+			     
+			     Assert.assertEquals(GlobalVariables.oDriver.findElement(By.cssSelector("span#ui-dialog-title-accessUpdatedDialog")).getText(),"User Updated");
 					        
-			    Assert.assertEquals(GlobalVariables.oDriver.findElement(By.id("ctl00_IndigoLiteMasterContent_lblDashboardName")).getText(),"Savan Vadalia"); 
+		//	    Assert.assertEquals(GlobalVariables.oDriver.findElement(By.id("UserInformation_UserFName")).getText(),"savan");
+			    
+			  //  Assert.assertEquals(GlobalVariables.oDriver.findElement(By.id("UserInformation_UserLName")).getText(),"vadalia");
 			    
 			  			
 		}

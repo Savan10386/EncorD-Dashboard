@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="EncorDashboard.TestScripts.UserAccess">
+      <class name="EncorDashboard.TestScripts.UserAdministration">
         <methods>
-          <include name="UserAccess"/>
+          <include name="UserAdministration"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- EncorDashboard.TestScripts.UserAccess -->
+      </class> <!-- EncorDashboard.TestScripts.UserAdministration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

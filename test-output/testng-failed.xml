@@ -1,15 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [src]">
+  <listeners>
+    <listener class-name="EncorDashboard.Logging.CustomReporter"/>
+  </listeners>
+  <test name="EncorDashboard.TestScripts(failed)">
     <classes>
+      <class name="EncorDashboard.TestScripts.AddDashboard">
+        <methods>
+          <include name="AddDashboard" invocation-numbers="1 4 5"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- EncorDashboard.TestScripts.AddDashboard -->
+      <class name="EncorDashboard.TestScripts.SaveCurrentView">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- EncorDashboard.TestScripts.SaveCurrentView -->
+      <class name="EncorDashboard.TestScripts.ExportFile">
+        <methods>
+          <include name="ExportDashboard"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- EncorDashboard.TestScripts.ExportFile -->
+      <class name="EncorDashboard.TestScripts.UserAdministration">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- EncorDashboard.TestScripts.UserAdministration -->
+      <class name="EncorDashboard.TestScripts.ChangeDashboard">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- EncorDashboard.TestScripts.ChangeDashboard -->
+      <class name="EncorDashboard.TestScripts.SetResetDashboard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- EncorDashboard.TestScripts.SetResetDashboard -->
       <class name="EncorDashboard.TestScripts.UserAccess">
         <methods>
-          <include name="UserAccess"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- EncorDashboard.TestScripts.UserAccess -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- EncorDashboard.TestScripts(failed) -->
+</suite> <!-- Failed suite [src] -->

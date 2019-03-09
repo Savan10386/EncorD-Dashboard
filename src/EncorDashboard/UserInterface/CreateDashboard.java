@@ -2,7 +2,9 @@ package EncorDashboard.UserInterface;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -95,7 +97,7 @@ public class CreateDashboard {
 					
 	   	GlobalVariables.oDriver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 	   	     
-	   	Thread.sleep(10000);
+	  // 	Thread.sleep(10000);
 	   		   		   	
 	   //	GlobalVariables.oDriver.findElement(By.id("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_NewDashboardRoundPanel_addIndicatorsGridView_Title_headerGridText")).click();
 	   	
@@ -133,7 +135,20 @@ public class CreateDashboard {
                                                
            if(flag.contentEquals("N"))
          {	
-	    	 SaveButton.click();
+        	   
+        	   //Scroll down browser then click on save button
+   		    
+   		    Actions action = new Actions(GlobalVariables.oDriver);
+   		    
+   		        Thread.sleep(1000);
+   		        
+   		        action.sendKeys(Keys.PAGE_DOWN).build().perform();
+   		    
+   		        action.sendKeys(Keys.PAGE_DOWN).build().perform();
+   		        
+   		     Thread.sleep(2000);
+	    	
+   		        SaveButton.click();
 	    		    	
 	         EncorDashboard.GlobalLibrary.GlobalFunction.Add_Log.info("Dashboard is saved");
 		 		

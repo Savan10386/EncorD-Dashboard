@@ -32,6 +32,8 @@ public class Administration {
 	
 	@FindBy(id="ctl00_ctl00_IndigoLiteMasterContent_AdminBody_UsersInGroup") WebElement userInGroup;
 	
+	@FindBy(xpath="//span[@class='ui-button-text']//following::span[4]") WebElement clickSaveAccess;
+	
 	
 	public Administration()
 	{
@@ -77,18 +79,30 @@ public class Administration {
 		    GlobalVariables.oDriver.switchTo().frame("ctl00_ctl00_IndigoLiteMasterContent_AdminBody_concert1");
 			
 		   
-		    clickUserDropDown.click();
+		   clickUserDropDown.click();
+		   
+		 //Scroll down browser then click on save button
+		    
+		    Actions action = new Actions(GlobalVariables.oDriver);
+		    
+		        Thread.sleep(1000);
+		        
+		        action.sendKeys(Keys.PAGE_DOWN).build().perform();
+		    
+		        action.sendKeys(Keys.PAGE_DOWN).build().perform();
+		        
+		        action.sendKeys(Keys.PAGE_DOWN).build().perform();
 			
-		
             GlobalVariables.oElement = GlobalVariables.oDriver.findElement(By.xpath("//html/body/ul[1]"));
 		
 		       Thread.sleep(1000);
 		
 		      System.out.println("Test Dropdown");
-		      
-		      GlobalVariables.sel  = new Select(GlobalVariables.oElement);
+		        
 		
-	   		GlobalFunction.SelectBySelecttag("Savan Vadalia");
+	   		GlobalFunction.Selectdropdown("Savan Vadalia","li");
+	   		
+	   		Thread.sleep(1000);
 		  
 		
 		}
@@ -98,6 +112,25 @@ public class Administration {
 			
 		}
 		
+	}
+	
+	public void clickSaveAccess()
+	{
+		try
+		{
+			
+		Thread.sleep(1000);
+		
+        clickSaveAccess.click();
+		
+        Thread.sleep(1000);
+		
+		}
+		
+		catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 		
 		//User Access
